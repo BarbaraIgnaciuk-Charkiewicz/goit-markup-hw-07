@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap');
+*{
+margin:0 auto;
+padding:0;
+box-sizing:border-box;
+outline:none;
+}
+body{
+font-family:"Roboto", sans-serif;
+color: #212121;
+}
+.container{
+width: 1200px;
+margin:0 auto;
+}
+@import 'components/page-header';
+@import 'components/logo';
+@import 'components/navigation';
+@import 'components/contact';
+@import 'components/section-one';
+@import 'components/button';
+@import 'components/list-lorem';
+@import 'components/section';
+
+.workplace{
+background-color: #F5F4FA;
+}
+@import 'components/team-list';
+@import 'components/footer-contact';
+@import 'components/footer-list';
+
+.footer-background{
+background: #2F303A;
+}
+@import 'components/page-footer';
+@import 'components/menu';
+@import 'components/products';
+@import 'components/services';
+@import 'components/social-media';
+@import 'components/portfolio';
+@import 'components/customers';
+@import 'components/footer-social-media';
+@import 'components/backdrop';
+@import 'components/modal';
+@import 'components/close-button';
+@import 'components/is-hidden';
+@import 'components/btn';
+@import 'components/email-newsletter';
+@import 'components/footer-newsletter';
+
+
+
+
+
+
+

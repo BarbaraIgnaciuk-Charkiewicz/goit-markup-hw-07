@@ -1,0 +1,30 @@
+.contact{
+    display: flex;
+    list-style: none;
+
+}
+
+.contact__item:not(:last-child){
+    margin-right: 50px;
+}
+.contact__link{
+    color: #757575;
+    text-decoration: none;
+ transition-property:color,fill;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contact__link:hover{
+color:#2196F3;
+fill: #2196F3;
+}
+.contact__link:focus {
+color:#2196F3;
+fill: #2196F3;
+} 
+.contact__icons{
+    fill: #757575;
+    padding-top: 0 auto;
+    padding-bottom: 0 auto;
+    margin-right: 10px;
+}

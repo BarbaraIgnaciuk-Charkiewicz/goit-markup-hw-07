@@ -22,7 +22,15 @@ border-bottom: solid;
 border-block-width: 1px;
 border-color: #ECECEC;
 }
-    
+   .page-header__menu{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.17;
+    cursor: pointer;
+    margin: 0;
+    display: flex;
+    align-items: center;
+} 
 .logo{
 font-family: 'Raleway';
 font-weight: 700;
@@ -49,15 +57,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 .logo__label{
     color:#2196F3
 }
-.page-header__menu{
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1.17;
-    cursor: pointer;
-    margin: 0;
-    display: flex;
-    align-items: center;
-}
+
 .navigation{
     list-style: none;
     display: flex;

@@ -1,0 +1,17 @@
+.page-header{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: solid;
+    border-block-width: 1px;
+    border-color: #ECECEC;
+    }
+.page-header__menu{
+font-size: 14px;
+font-weight: 500;
+line-height: 1.17;
+cursor: pointer;
+margin: 0;
+display: flex;
+align-items: center;
+} 

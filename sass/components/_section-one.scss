@@ -1,0 +1,21 @@
+.section-one{
+    background-color:#2F303A;
+    padding: 10em 0;
+    background-image:url(../images/img-title.jpg),url(../images/overlay.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+    }
+    
+    .section-one__title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+    }
