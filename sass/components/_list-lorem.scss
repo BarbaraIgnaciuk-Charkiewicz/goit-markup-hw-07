@@ -1,8 +1,11 @@
+@import '../utils/variables.scss';
 .list-lorem{
-    display: flex;
-    align-items: center;
-    list-style: none;
-}
+    display: flex;}
+  .list-lorem__item{
+    flex-wrap: wrap;
+   list-style: none;
+    }
+
 .list-lorem__title{
     font-weight: 700;
     font-size: 14px;
@@ -12,7 +15,7 @@
 .list-lorem__text{
 font-size: 14px;
 line-height: 1.71;
-color: #757575;
+color: $colorAccent;
 }
 .list-lorem__item:not(:last-child){
     margin-right: 30px;
@@ -20,11 +23,12 @@ color: #757575;
 .list-lorem__icons{
     width: 270px;
     height: 120px;
-    border: 4px solid #F5F4FA;
-    background-color: #F5F4FA;
+    border: $borderLorem;
+    background-color: $backgroundColor;
     border-radius: 4px; 
     margin-bottom: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
+
 }

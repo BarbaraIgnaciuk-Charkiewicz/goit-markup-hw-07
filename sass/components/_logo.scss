@@ -1,3 +1,4 @@
+@import '../utils/variables.scss';
 .logo{
     font-family: 'Raleway';
     font-weight: 700;
@@ -7,20 +8,20 @@
     list-style: none;
     margin-right: 92px;
     text-decoration: none;
-    color: #212121;
+    color: $prymaryColor;
     padding-top: 24px;
     padding-bottom: 25px;
     transition-property:color;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: $transitionFunction;
     
     }
     .logo:hover{
-        color: #2196F3;
+        color: $secondaryColor;
     }
     .logo:focus{
-        color: #2196F3;  
+        color: $secondaryColor;  
     }
     .logo__label{
-        color:#2196F3
+        color:$secondaryColor
     }

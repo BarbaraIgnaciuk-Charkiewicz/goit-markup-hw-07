@@ -1,7 +1,8 @@
+@import '../utils/variables.scss';
 .footer-contact{
     font-size: 14px;
     line-height: 1.71;
-    color: #FFFFFF;
+    color: $colorBtn;
     list-style: none;
     text-decoration: none;
    margin: 0;
@@ -11,5 +12,5 @@
 .footer-contact__link{
 text-decoration:none;
 font-style: normal;
-color: #FFFFFF;
+color: $colorBtn;
 }

@@ -1,3 +1,4 @@
+@import '../utils/variables.scss';
 .footer-newsletter__items{
     display: flex;
     outline: none;
@@ -14,7 +15,7 @@
     line-height:1.172142;
     font-size: 14px;
     font-style: normal;
-    color: #FFFFFF;
+    color: $colorBtn;
     display: block;
    
 }

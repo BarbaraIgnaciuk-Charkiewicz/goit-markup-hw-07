@@ -1,5 +1,6 @@
+@import '../utils/variables.scss';
 .email-newsletter__icons{
-    fill: rgba(255, 255, 255, 1);
+    fill: $colorBtn;
     position: relative;
     transform: translate(50%, 20%);
 }
@@ -16,22 +17,21 @@
     }
     .email-newsletter__input{
     min-width: 300px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border: $borderEmail;
     border-radius: 4px;
-    background-color: #2F303A;
+    background-color: $colorFooter;
     padding-left: 16px;
     padding-top: 15px;
     padding-bottom: 15px;
     
     }
     .email-newsletter__input:hover{
-        border-color:#2196F3;
-        color: #2196F3;
+        border-color:$secondaryColor;
+        color: $secondaryColor;
     }
     .email-newsletter__input:focus{
-        border-color:#2196F3;
-        color: #2196F3;
+        border-color:$secondaryColor;
+        color: $secondaryColor;
     }
     .email-newsletter__btn{
         position:relative;

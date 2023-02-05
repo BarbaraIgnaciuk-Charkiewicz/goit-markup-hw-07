@@ -1,3 +1,4 @@
+@import '../utils/variables.scss';
 .customers{
     display: flex;
     flex-wrap: wrap;
@@ -5,23 +6,24 @@
     list-style: none;
 }  
 .customers__icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 170px;
     height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     fill: #AFB1B8;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
     transition-property:border-color,fill;
 transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+transition-timing-function: $transitionFunction;
 }
 .customers__icons:hover{
-    border-color: #2196F3;
-    fill: #2196F3;   
+    border-color: $secondaryColor;
+    fill: $secondaryColor;   
 }
 .customers__icons:focus{
-    border-color: #2196F3;
-    fill: #2196F3;
+    border-color: $secondaryColor;
+    fill: $secondaryColor;
 }

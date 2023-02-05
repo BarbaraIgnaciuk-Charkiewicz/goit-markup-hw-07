@@ -1,30 +1,29 @@
+@import '../utils/variables.scss';
 .contact{
     display: flex;
     list-style: none;
-
-}
 
 .contact__item:not(:last-child){
     margin-right: 50px;
 }
 .contact__link{
-    color: #757575;
+    color: $colorAccent;
     text-decoration: none;
  transition-property:color,fill;
 transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+transition-timing-function: $transitionFunction;
+
+&:hover{
+color:$secondaryColor;
+fill: $secondaryColor;
 }
-.contact__link:hover{
-color:#2196F3;
-fill: #2196F3;
-}
-.contact__link:focus {
-color:#2196F3;
-fill: #2196F3;
-} 
+&:focus {
+color:$secondaryColor;
+fill: $secondaryColor;
+} }
 .contact__icons{
-    fill: #757575;
+    fill: $colorAccent;
     padding-top: 0 auto;
     padding-bottom: 0 auto;
     margin-right: 10px;
-}
+}}

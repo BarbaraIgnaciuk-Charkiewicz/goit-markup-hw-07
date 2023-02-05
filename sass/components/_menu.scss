@@ -1,3 +1,4 @@
+@import '../utils/variables.scss';
 .menu__button{
     font-weight: 500;
     font-size: 16px;
@@ -8,27 +9,24 @@
     padding-left: 22px;
     padding-right: 22px;
     border-style:none;
-    background-color:#F5F4Fa;
+    background-color:$backgroundColor;
     transition-property:background-color,color,box-shadow;
 transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+transition-timing-function: $secondaryColor;
+border-radius: 4px;
 }
 
 .menu__button:hover{
-background-color:#2196F3;
-color: #FFFFFF;
-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.08);
-box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+background-color:$secondaryColor;
+color: $colorBtn;
+box-shadow:$boxShadowMenu;
 
     
 }
 .menu__button:focus{
-background-color:#2196F3;
-color: #FFFFFF;
-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.08);
-box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+background-color:$secondaryColor;
+color: $colorBtn;
+box-shadow: $boxShadowMenu;
 }
 .menu{
     display: flex;
