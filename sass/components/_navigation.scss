@@ -1,3 +1,4 @@
+@import '../utils/variables.scss';
 .navigation{
     list-style: none;
     display: flex;
@@ -8,19 +9,18 @@
 }
 .navigation__link{
     text-decoration: none;
-    color: #212121;
+    color: $prymaryColor;
     padding-top: 32px;
     padding-bottom: 32px;
     transition-property:color;
-transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+transition: $transitionFunction;
 }
 
 .navigation__link:hover{
-	color:#2196F3;
+	color:$secondaryColor;
 }
 .navigation__link:focus {
-    color:#2196F3   
+    color:$secondaryColor   
 }
 .navigation__item .is-active::after {
     display: block;
@@ -30,6 +30,6 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     top: 80px;
     width: 53px;
     height: 4px;
-    background: #2196F3;
+    background: $secondaryColor;
     border-radius: 2px;
     }

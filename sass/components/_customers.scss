@@ -11,13 +11,12 @@
     align-items: center;
     width: 170px;
     height: 92px;
-    border: 1px solid #AFB1B8;
+    border: $borderCustomers;
     border-radius: 4px;
-    fill: #AFB1B8;
+    fill: $colorIcons;
     
     transition-property:border-color,fill;
-transition-duration: 250ms;
-transition-timing-function: $transitionFunction;
+transition: $transitionFunction;
 }
 .customers__icons:hover{
     border-color: $secondaryColor;

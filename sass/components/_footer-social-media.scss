@@ -7,7 +7,7 @@
     margin-right: 78px;
 }
 .footer-social-media__title{
-    font-weight: 700;
+    font-weight: $fontThree;
     line-height:1.172142;
     font-size: 14px;
     font-style: normal;
@@ -25,8 +25,7 @@
     align-items: center;
     fill: $colorBtn; 
     transition-property:background-color;
-    transition-duration: 250ms;
-    transition-timing-function: $transitionFunction;
+    transition: $transitionFunction;
     }
     
     .footer-social-media__link:hover{
@@ -44,7 +43,7 @@
         height: 44px;
     }
     .footer-social-media__title{
-        font-weight: 700;
+        font-weight: $fontThree;
         line-height:1.172142;
         font-size: 14px;
         font-style: normal;

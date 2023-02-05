@@ -1,3 +1,4 @@
+@import '../utils/variables.scss';
 .social-media{
     display: flex;
     flex-wrap: wrap;
@@ -6,34 +7,33 @@
 }
 
 .social-media__icons{
-    fill:#AFB1B8;
+    fill:$colorIcons;
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    border: #FFFFFF;
+    border: $colorBtn;
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    background-color: #FFFFFF;
+    background-color: $colorBtn;
     transition-property:border-color, background-color, fill;
-transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+transition: $transitionFunction;
 }
 .social-media__icons:hover{
-    border-color: #2196F3;
+    border-color: $secondaryColor;
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    background-color: #2196F3;
-    fill: #FFFFFF;
+    background-color: $secondaryColor;
+    fill: $colorBtn;
 }
 .social-media__icons:focus{
-    border: #2196F3;
+    border: $secondaryColor;
     width: 44px;
     height: 44px;
     border-radius: 50%;
     background-color: #2196F3;
-    fill: #FFFFFF;
+    fill: $colorBtn;
 }
 .social-media__icons:not(:last-child){
     margin-right: 10px;

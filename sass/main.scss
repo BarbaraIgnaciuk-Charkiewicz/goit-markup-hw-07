@@ -7,8 +7,8 @@
     outline:none;
     }
     body{
-        font-family:"Roboto", sans-serif;
-        color: #212121;
+        font-family:$fontFamily;
+        color: $prymaryColor;
         }   
     .container{
     width: 1200px;
@@ -23,7 +23,7 @@
 @import 'components/list-lorem';
 @import 'components/section';
 .workplace{
-    background-color: #F5F4FA;
+    background-color: $backgroundColor;
     }
 @import 'components/team-list';
 @import 'components/footer-contact';

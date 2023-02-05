@@ -10,8 +10,7 @@
     color: $colorAccent;
     text-decoration: none;
  transition-property:color,fill;
-transition-duration: 250ms;
-transition-timing-function: $transitionFunction;
+transition: $transitionFunction;
 
 &:hover{
 color:$secondaryColor;

@@ -1,3 +1,4 @@
+@import '../utils/variables.scss';
 .modal{
     position: absolute;
     padding: 40px;
@@ -6,12 +7,9 @@
     transform: translate(-50%,-50%);
     width: 528px;
     height: 581px;
-    background-color: #FFFFFF;
-    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
-    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
-    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-    transition-duration: 2500ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: $colorBtn;
+    box-shadow: $boxShadowModal;
+    transition: $transitionFunction;
     }
     .modal__form{
         list-style: none;
@@ -26,8 +24,8 @@
     font-size: 12px;
     line-height: 1.67;
     letter-spacing: 0.01em;
-    color: rgba(117, 117, 117, 0.5);
-    border: 1px solid rgba(33, 33, 33, 0.2);
+    color: $colorAccent;
+    border: $borderModal;
     border-radius: 4px;
     padding-left: 42px;
     }
@@ -35,23 +33,23 @@
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em;
-    color: #757575;
+    color: $colorAccent;
     padding-bottom: 4px;
     }
     .modal__title{
-    font-weight: 700;
+    font-weight: $fontThree;
     font-size: 20px;
     line-height: 1.15;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: $prymaryColor;
     }
     .modal__checkbox{
     margin-bottom: 30px; 
     }
     
     .modal__checkbox__input{
-    border-color:rgba(33, 33, 33, 1);
+    border;$borderModal;
     cursor: pointer;
     padding-top: 20px;
     background: url(../images/icons.svg#icon-icon-check);
@@ -61,14 +59,14 @@
         font-size: 15px;
         line-height: 1.71;
         letter-spacing: 0.03em;
-        color: #757575;
+        color: $colorAccent;
         width: 60px;
         height: 60px; 
         margin-left: 7px;
     }
     
     .modal__checkbox__link{
-        color: #2196F3;
+        color: $secondaryColor;
     }
     .modal__btn{
     display: flex;
@@ -77,20 +75,19 @@
         position: relative;
         display: flex;
         transition-property:background-color,fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: $transitionFunction;
     }
     .modal__item:hover{
-      fill: #2196F3;
+      fill: $secondaryColor;
     }
     .modal__item .modal__input:hover{
-        border-color: #2196F3;
+        border-color: $secondaryColor;
     }
     .modal__item:focus{
-        fill: #2196F3;
+        fill: $secondaryColor;
       }
       .modal__item .modal__input:focus{
-          border-color: #2196F3;
+          border-color: $secondaryColor;
       }
     
     .modal__icons{
@@ -102,8 +99,7 @@
     }
     .modal__feedback{
         transition-property:background-color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition: $transitionFunction;
         }   
     
     .modal__textarea{
@@ -114,8 +110,8 @@
     font-size: 12px;
     line-height: 1.67;
     letter-spacing: 0.01em;
-    color: rgba(117, 117, 117, 0.5);
-    border: 1px solid rgba(33, 33, 33, 0.2);
+    color: $colorAccent;
+    border: $borderModal;
     border-radius: 4px;
     padding-left: 16px;
     padding-right: 16px;
@@ -123,22 +119,22 @@
     padding-bottom: 12px;
     }
     .modal__textarea:hover{
-        border-color: #2196F3;
+        border-color: $secondaryColor;
     }
     .modal__textarea:focus{
-        border-color: #2196F3;
+        border-color: $secondaryColor;
     }
     .modal__btn__form{
         display: flex;
-        background-color:#2196F3;
-        font-weight: 700;
+        background-color:$secondaryColor;
+        font-weight: $fontThree;
         font-size: 16px;
         line-height: 1.88;
-        color:#FFFFFF;
+        color:$colorBtn;
         cursor: pointer;
         margin: 0 auto;
         border-style:none;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        box-shadow: $boxShadowBtn;
     border-radius: 4px;
         padding: 10px 76px ;
     }

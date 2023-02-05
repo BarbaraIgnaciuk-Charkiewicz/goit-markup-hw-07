@@ -1,7 +1,7 @@
 @import '../utils/variables.scss';
 .logo{
-    font-family: 'Raleway';
-    font-weight: 700;
+    font-family: $fontLogo;
+    font-weight: $fontThree;
     font-size: 26px;
     line-height: 1.19;
     text-decoration: none;
@@ -12,8 +12,7 @@
     padding-top: 24px;
     padding-bottom: 25px;
     transition-property:color;
-    transition-duration: 250ms;
-    transition-timing-function: $transitionFunction;
+    transition: $transitionFunction;
     
     }
     .logo:hover{
@@ -23,5 +22,5 @@
         color: $secondaryColor;  
     }
     .logo__label{
-        color:$secondaryColor
+        color:$secondaryColor;
     }

@@ -11,8 +11,7 @@
     border-style:none;
     background-color:$backgroundColor;
     transition-property:background-color,color,box-shadow;
-transition-duration: 250ms;
-transition-timing-function: $secondaryColor;
+transition: $secondaryColor;
 border-radius: 4px;
 }
 

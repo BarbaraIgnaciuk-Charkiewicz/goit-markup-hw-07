@@ -1,5 +1,6 @@
+@import '../utils/variables.scss';
 .section-one{
-    background-color:#2F303A;
+    background-color:$backgroundSectionOne;
     padding: 10em 0;
     background-image:url(../images/img-title.jpg),url(../images/overlay.jpg);
     background-position:center;
@@ -13,9 +14,9 @@
     justify-content: center;
     text-align: center;
     align-items: center;
-    font-weight: 900;
+    font-weight: $fontFour;
     font-size: 44px;
     line-height: 1.36;
-    color: #FFFFFF;
+    color: $colorBtn;
     margin-bottom: 30px;
     }
