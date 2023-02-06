@@ -1,7 +1,7 @@
 @import '../utils/variables.scss';
 .contact{
     display: flex;
-    list-style: none;
+    list-style: none;}
 
 .contact__item:not(:last-child){
     margin-right: 50px;
@@ -25,4 +25,4 @@ fill: $secondaryColor;
     padding-top: 0 auto;
     padding-bottom: 0 auto;
     margin-right: 10px;
-}}
+}

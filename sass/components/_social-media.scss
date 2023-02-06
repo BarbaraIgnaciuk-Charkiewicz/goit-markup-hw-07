@@ -18,8 +18,8 @@
     background-color: $colorBtn;
     transition-property:border-color, background-color, fill;
 transition: $transitionFunction;
-}
-.social-media__icons:hover{
+
+&:hover{
     border-color: $secondaryColor;
     width: 44px;
     height: 44px;
@@ -27,14 +27,14 @@ transition: $transitionFunction;
     background-color: $secondaryColor;
     fill: $colorBtn;
 }
-.social-media__icons:focus{
+&:focus{
     border: $secondaryColor;
     width: 44px;
     height: 44px;
     border-radius: 50%;
     background-color: #2196F3;
     fill: $colorBtn;
-}
+}}
 .social-media__icons:not(:last-child){
     margin-right: 10px;
 }

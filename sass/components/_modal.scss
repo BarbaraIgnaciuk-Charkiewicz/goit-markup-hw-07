@@ -16,7 +16,7 @@
         padding-top: 28px;
     
     }
-    .modal__input {
+    .modal__input{
     Width:448px;
     height: 40px;
     margin-bottom: 10px;
@@ -49,7 +49,7 @@
     }
     
     .modal__checkbox__input{
-    border;$borderModal;
+    border: $borderModal;
     cursor: pointer;
     padding-top: 20px;
     background: url(../images/icons.svg#icon-icon-check);
@@ -76,19 +76,21 @@
         display: flex;
         transition-property:background-color,fill;
     transition: $transitionFunction;
-    }
-    .modal__item:hover{
+    
+    &:hover{
       fill: $secondaryColor;
     }
-    .modal__item .modal__input:hover{
+    &:focus{
+        fill: $secondaryColor;
+      
+}
+    & .modal__input:hover{
         border-color: $secondaryColor;
     }
-    .modal__item:focus{
-        fill: $secondaryColor;
-      }
-      .modal__item .modal__input:focus{
+    
+      & .modal__input:focus{
           border-color: $secondaryColor;
-      }
+      }}
     
     .modal__icons{
         position: absolute;
@@ -117,13 +119,13 @@
     padding-right: 16px;
     padding-top: 12px;
     padding-bottom: 12px;
-    }
-    .modal__textarea:hover{
+    
+    &:hover{
         border-color: $secondaryColor;
     }
-    .modal__textarea:focus{
+    &:focus{
         border-color: $secondaryColor;
-    }
+    }}
     .modal__btn__form{
         display: flex;
         background-color:$secondaryColor;

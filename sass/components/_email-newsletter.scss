@@ -24,15 +24,15 @@
     padding-top: 15px;
     padding-bottom: 15px;
     
-    }
-    .email-newsletter__input:hover{
+    
+    &:hover{
         border-color:$secondaryColor;
         color: $secondaryColor;
     }
-    .email-newsletter__input:focus{
+    &:focus{
         border-color:$secondaryColor;
         color: $secondaryColor;
-    }
+    }}
     .email-newsletter__btn{
         position:relative;
         width: 200px;

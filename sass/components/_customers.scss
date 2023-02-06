@@ -17,12 +17,12 @@
     
     transition-property:border-color,fill;
 transition: $transitionFunction;
-}
-.customers__icons:hover{
+
+&:hover{
     border-color: $secondaryColor;
     fill: $secondaryColor;   
 }
-.customers__icons:focus{
+&:focus{
     border-color: $secondaryColor;
     fill: $secondaryColor;
-}
+}}

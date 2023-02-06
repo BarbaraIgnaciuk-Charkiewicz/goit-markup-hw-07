@@ -14,13 +14,13 @@
     transition-property:color;
     transition: $transitionFunction;
     
-    }
-    .logo:hover{
+    
+    &:hover{
         color: $secondaryColor;
     }
-    .logo:focus{
+    &:focus{
         color: $secondaryColor;  
-    }
+    }}
     .logo__label{
         color:$secondaryColor;
     }

@@ -13,20 +13,20 @@
     transition-property:background-color,color,box-shadow;
 transition: $secondaryColor;
 border-radius: 4px;
-}
 
-.menu__button:hover{
+
+&:hover{
 background-color:$secondaryColor;
 color: $colorBtn;
 box-shadow:$boxShadowMenu;
 
     
 }
-.menu__button:focus{
+&:focus{
 background-color:$secondaryColor;
 color: $colorBtn;
 box-shadow: $boxShadowMenu;
-}
+}}
 .menu{
     display: flex;
     justify-content: center;

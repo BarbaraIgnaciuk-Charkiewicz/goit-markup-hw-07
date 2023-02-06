@@ -14,14 +14,13 @@
     padding-bottom: 32px;
     transition-property:color;
 transition: $transitionFunction;
-}
 
-.navigation__link:hover{
+&:hover{
 	color:$secondaryColor;
 }
-.navigation__link:focus {
+&:focus {
     color:$secondaryColor   
-}
+}}
 .navigation__item .is-active::after {
     display: block;
     content:"";

@@ -26,9 +26,9 @@
     fill: $colorBtn; 
     transition-property:background-color;
     transition: $transitionFunction;
-    }
     
-    .footer-social-media__link:hover{
+    
+    &:hover{
     border-radius: 50%;
     background-color: $secondaryColor;
     width: 44px;
@@ -36,12 +36,12 @@
     
     }
     
-    .footer-social-media__link:focus{
+    &:focus{
         border-radius: 50%;
         background-color: $secondaryColor;
         width: 44px;
         height: 44px;
-    }
+    }}
     .footer-social-media__title{
         font-weight: $fontThree;
         line-height:1.172142;

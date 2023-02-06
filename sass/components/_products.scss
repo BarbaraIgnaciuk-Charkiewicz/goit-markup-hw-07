@@ -20,6 +20,13 @@
 .products__list{
     border: $borderProducts;
     cursor: pointer;
+
+    &:hover{
+        box-shadow:  $boxShadowProducts
+        }
+    &:focus{
+            box-shadow:  $boxShadowProducts
+        }
     }
         
     .products__card{
@@ -27,12 +34,7 @@
     overflow: hidden;   
     }
     
-    .products__list:hover{
-        box-shadow:  $boxShadowProducts
-        }
-        .products__list:focus{
-            box-shadow:  $boxShadowProducts
-        }
+    
         .products__hover__text{
             font-size: 18px;
             line-height: 1.56;

@@ -14,6 +14,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap");
+* {
+  margin: 0 auto;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+}
+
 * {
   margin: 0 auto;
   padding: 0;
@@ -75,16 +90,14 @@ body {
   padding-bottom: 25px;
   -webkit-transition-property: color;
   transition-property: color;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .logo:hover {
   color: #2196f3;
 }
-
 .logo:focus {
   color: #2196f3;
 }
@@ -114,18 +127,16 @@ body {
   padding-bottom: 32px;
   -webkit-transition-property: color;
   transition-property: color;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .navigation__link:hover {
-  color: #2196F3;
+  color: #2196f3;
 }
-
 .navigation__link:focus {
-  color: #2196F3;
+  color: #2196f3;
 }
 
 .navigation__item .is-active::after {
@@ -136,7 +147,7 @@ body {
   top: 80px;
   width: 53px;
   height: 4px;
-  background: #2196F3;
+  background: #2196f3;
   border-radius: 2px;
 }
 
@@ -146,28 +157,31 @@ body {
   display: flex;
   list-style: none;
 }
-.contact .contact__item:not(:last-child) {
+
+.contact__item:not(:last-child) {
   margin-right: 50px;
 }
-.contact .contact__link {
+
+.contact__link {
   color: #757575;
   text-decoration: none;
   -webkit-transition-property: color, fill;
   transition-property: color, fill;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contact .contact__link:hover {
+.contact__link:hover {
   color: #2196f3;
   fill: #2196f3;
 }
-.contact .contact__link:focus {
+.contact__link:focus {
   color: #2196f3;
   fill: #2196f3;
 }
-.contact .contact__icons {
+
+.contact__icons {
   fill: #757575;
   padding-top: 0 auto;
   padding-bottom: 0 auto;
@@ -313,12 +327,8 @@ body {
 .team-list__card {
   border-bottom-right-radius: 4px;
   border-bottom-left-radius: 4px;
-  -webkit-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
-  -webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
-          box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
-  -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-          box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px 0px rgba(0, 0, 0, 0.14) 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px 0px rgba(0, 0, 0, 0.14) 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 
 .team-list__figure {
@@ -393,20 +403,16 @@ body {
   transition-property: background-color, color, -webkit-box-shadow;
   transition-property: background-color, color, box-shadow;
   transition-property: background-color, color, box-shadow, -webkit-box-shadow;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: #2196f3;
-          transition-timing-function: #2196f3;
+  -webkit-transition: #2196f3;
+  transition: #2196f3;
   border-radius: 4px;
 }
-
 .menu__button:hover {
   background-color: #2196f3;
   color: #FFFFFF;
   -webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12) 0px 1px 2px 0px rgba(0, 0, 0, 0.08) 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12) 0px 1px 2px 0px rgba(0, 0, 0, 0.08) 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
-
 .menu__button:focus {
   background-color: #2196f3;
   color: #FFFFFF;
@@ -455,28 +461,18 @@ body {
   border: 1px solid #EEEEEE;
   cursor: pointer;
 }
+.products__list:hover {
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12) 0px 4px 4px rgba(0, 0, 0, 0.06) 1px 4px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12) 0px 4px 4px rgba(0, 0, 0, 0.06) 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.products__list:focus {
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12) 0px 4px 4px rgba(0, 0, 0, 0.06) 1px 4px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12) 0px 4px 4px rgba(0, 0, 0, 0.06) 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 
 .products__card {
   position: relative;
   overflow: hidden;
-}
-
-.products__list:hover {
-  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12);
-          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12);
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
-  -webkit-box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16);
-          box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.products__list:focus {
-  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12);
-          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12);
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
-  -webkit-box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16);
-          box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .products__hover__text {
@@ -494,7 +490,7 @@ body {
   width: 100%;
   height: auto;
   padding: 49px 45px 49px 24px;
-  background: rgba(33, 150, 243, 0.9);
+  background: #2196f3;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -508,14 +504,14 @@ body {
           transform: translatey(0);
 }
 
-.services {
+.service {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   list-style: none;
 }
 
-.services__jgp {
+.service__item {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -528,7 +524,7 @@ body {
           align-items: flex-start;
 }
 
-.services__jgp > .services__text {
+.service__item > .service__text {
   position: absolute;
   bottom: 0;
   right: 0px;
@@ -537,7 +533,7 @@ body {
   height: 70px;
 }
 
-.services__text {
+.service__text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -556,7 +552,7 @@ body {
   color: #FFFFFF;
 }
 
-.services__jgp :not(:first-child) {
+.service__item :not(:first-child) {
   margin-left: 30px;
 }
 
@@ -588,23 +584,21 @@ body {
   background-color: #FFFFFF;
   -webkit-transition-property: border-color, background-color, fill;
   transition-property: border-color, background-color, fill;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .social-media__icons:hover {
-  border-color: #2196F3;
+  border-color: #2196f3;
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: #2196F3;
+  background-color: #2196f3;
   fill: #FFFFFF;
 }
-
 .social-media__icons:focus {
-  border: #2196F3;
+  border: #2196f3;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -662,17 +656,15 @@ body {
   fill: #AFB1B8;
   -webkit-transition-property: border-color, fill;
   transition-property: border-color, fill;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .customers__icons:hover {
   border-color: #2196f3;
   fill: #2196f3;
 }
-
 .customers__icons:focus {
   border-color: #2196f3;
   fill: #2196f3;
@@ -717,19 +709,17 @@ body {
   fill: #FFFFFF;
   -webkit-transition-property: background-color;
   transition-property: background-color;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .footer-social-media__link:hover {
   border-radius: 50%;
   background-color: #2196f3;
   width: 44px;
   height: 44px;
 }
-
 .footer-social-media__link:focus {
   border-radius: 50%;
   background-color: #2196f3;
@@ -777,10 +767,10 @@ body {
   background-color: #FFFFFF;
   -webkit-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px 0px rgba(0, 0, 0, 0.14) 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px 0px rgba(0, 0, 0, 0.14) 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-  -webkit-transition-duration: 2500ms;
-          transition-duration: 2500ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal__form {
@@ -796,7 +786,7 @@ body {
   font-size: 12px;
   line-height: 1.67;
   letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
+  color: #757575;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding-left: 42px;
@@ -824,7 +814,7 @@ body {
 }
 
 .modal__checkbox__input {
-  border-color: rgb(33, 33, 33);
+  border: 1px solid rgba(33, 33, 33, 0.2);
   cursor: pointer;
   padding-top: 20px;
   background: url(../images/icons.svg#icon-icon-check);
@@ -841,7 +831,7 @@ body {
 }
 
 .modal__checkbox__link {
-  color: #2196F3;
+  color: #2196f3;
 }
 
 .modal__btn {
@@ -857,26 +847,22 @@ body {
   display: flex;
   -webkit-transition-property: background-color, fill;
   transition-property: background-color, fill;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .modal__item:hover {
-  fill: #2196F3;
+  fill: #2196f3;
 }
-
-.modal__item .modal__input:hover {
-  border-color: #2196F3;
-}
-
 .modal__item:focus {
-  fill: #2196F3;
+  fill: #2196f3;
 }
-
+.modal__item .modal__input:hover {
+  border-color: #2196f3;
+}
 .modal__item .modal__input:focus {
-  border-color: #2196F3;
+  border-color: #2196f3;
 }
 
 .modal__icons {
@@ -889,10 +875,10 @@ body {
 .modal__feedback {
   -webkit-transition-property: background-color;
   transition-property: background-color;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal__textarea {
@@ -903,7 +889,7 @@ body {
   font-size: 12px;
   line-height: 1.67;
   letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
+  color: #757575;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding-left: 16px;
@@ -911,20 +897,18 @@ body {
   padding-top: 12px;
   padding-bottom: 12px;
 }
-
 .modal__textarea:hover {
-  border-color: #2196F3;
+  border-color: #2196f3;
 }
-
 .modal__textarea:focus {
-  border-color: #2196F3;
+  border-color: #2196f3;
 }
 
 .modal__btn__form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #2196F3;
+  background-color: #2196f3;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -1005,12 +989,10 @@ body {
   padding-top: 15px;
   padding-bottom: 15px;
 }
-
 .email-newsletter__input:hover {
   border-color: #2196f3;
   color: #2196f3;
 }
-
 .email-newsletter__input:focus {
   border-color: #2196f3;
   color: #2196f3;
